@@ -99,16 +99,86 @@ namespace DuongToanTrung_TestLienHe
 
 
 
-    //TestCase Hợp lệ
-    [TestCase("Kiểm tra liên hệ nhập đầy đủ thông tin ","TC001",
-                    "Dương Toàn Trung", "0928862227", "toantrung123@gmail", "tư vấn", "cần tư vấn điện thoại")]
+        //TestCase Hợp lệ
+        [TestCase("Kiểm tra liên hệ nhập đầy đủ thông tin ", "TC001",
+                        "Dương Toàn Trung", "0928862227", "toantrung123@gmail", "tư vấn", "cần tư vấn điện thoại")]
+
+        [TestCase("Kiểm tra liên hệ nhâp tên là tiếng anh", "TC002",
+                "Donal Trump", "0928862227", "toantrung123@gmail.com", "tư vấn", "cần tư vấn điện thoại")]
+
+        [TestCase("Kiểm tra liên hệ nhâp tên là chữ in hoa", "TC003",
+                "DUONG TOAN TRUNG", "0928862227", "toantrung123@gmail.com", "tư vấn", "cần tư vấn điện thoại")]
+
+        [TestCase("Kiểm tra liên hệ nhâp tên là tên không có khoảng cách", "TC004",
+                "DươngToànTrung", "0928862227", "toantrung123@gmail.com", "tư vấn", "cần tư vấn điện thoại")]
+
+        [TestCase("Kiểm tra liên hệ nhâp số điện thoại là số có khoảng trắng", "TC005",
+                "Dương Toàn Trung", "092 886 222 7", "toantrung123@gmail.com", "tư vấn", "cần tư vấn điện thoại")]
 
 
 
 
         //TestCase Không Hợp lệ 
-        [TestCase("Kiểm tra chức năng liên hệ nhập thiếu tên ","TC002",
-                    "", "0928862227", "toantrung123@gmail", "tư vấn", "cần tư vấn điện thoại")]
+        [TestCase("Kiểm tra liên hệ nhâp tên là bỏ trống", "TC006",
+                "", "0928862227", "toantrung123@gmail.com", "tư vấn", "cần tư vấn điện thoại")]
+
+        [TestCase("Kiểm tra chức năng liên hệ không nhập tên ", "TC007",
+                        "", "0928862227", "toantrung123@gmail", "tư vấn", "cần tư vấn điện thoại")]
+
+        [TestCase("Kiểm tra chức năng liên hệ không nhập số", "TC008",
+                "Dương Toàn Trung", "", "toantrung123@gmail.com", "tư vấn", "cần tư vấn điện thoại")]
+
+        [TestCase("Kiểm tra chức năng liên hệ không nhập số", "TC009",
+                "Dương Toàn Trung", "0928862227", "", "tư vấn", "cần tư vấn điện thoại")]
+
+        [TestCase("Kiểm tra chức năng liên hệ không nhập tiêu đề", "TC010",
+                "Dương Toàn Trung", "0928862227", "toantrung123@gmail.com", "", "cần tư vấn điện thoại")]
+
+        [TestCase("Kiểm tra chức năng liên hệ không nhập mô tả", "TC011",
+                "Dương Toàn Trung", "0928862227", "toantrung123@gmail.com", "tư vấn", "")]
+
+        [TestCase("Kiểm tra chức năng liên hệ không nhập số điện thoại và không nhập gmail", "TC012",
+                "Dương Toàn Trung", "", "", "tư vấn", "cần tư vấn điện thoại")]
+
+
+        [TestCase("Kiểm tra chức năng liên hệ nhập gmail không có kí tự @", "TC013",
+                "Dương Toàn Trung", "0928862227", "toantrung123gmail", "tư vấn", "cần tư vấn điện thoại")]
+
+        [TestCase("Kiểm tra chức năng liên hệ gmail không có đuôi gmail ", "TC014",
+                "Dương Toàn Trung", "0928862227", "toantrung123@", "tư vấn", "cần tư vấn điện thoại")]
+
+        [TestCase("Kiểm tra chức năng liên hệ gmail không hợp lệ", "TC012",
+                "Dương Toàn Trung", "0928862227", "no-reply@shopee.com", "tư vấn", "cần tư vấn điện thoại")]
+
+        //TestCase tên không hợp lệ 
+        [TestCase("Kiểm tra chức năng liên hệ nhập tên có kí tự đặc biệt", "TC013",
+                "Dương Toàn Trung@@", "0928862227", "toantrung123@gmail", "tư vấn", "cần tư vấn điện thoại")]
+
+        [TestCase("Kiểm tra chức năng liên hệ nhập tên bao gồm chữ và số", "TC014",
+                "Dương Toàn Trung 21", "0928862227", "toantrung123@gmail", "tư vấn", "cần tư vấn điện thoại")]
+
+        [TestCase("Kiểm tra chức năng liên hệ nhập tên trên 30 kí tự", "TC015",
+                "Dương Toàn Trung 21sjddffgfgfhfhfhyrtyrthfhfghfgfgjfgjfjf", "0928862227", "toantrung123@gmail", "tư vấn", "cần tư vấn điện thoại")]
+
+        //TestCase số điện thoại không hợp lệ 
+        [TestCase("Kiểm tra chức năng liên hệ nhập chỉ 1 số điện thoại ", "TC016",
+                "Dương Toàn Trung", "0", "toantrung123@gmail.com", "tư vấn", "cần tư vấn điện thoại")]
+
+        [TestCase("Kiểm tra chức năng liên hệ nhập số điện thoại dài hơn 10 số", "TC017",
+                "Dương Toàn Trung 21", "092886222754677", "toantrung123@gmail.com", "tư vấn", "cần tư vấn điện thoại")]
+
+        [TestCase("Kiểm tra chức năng liên hệ nhập số điện thoại là chữ và số", "TC018",
+                "Dương Toàn Trung 21", "0928862227a", "toantrung123@gmail.com", "tư vấn", "cần tư vấn điện thoại")]
+
+        //TestCase tiêu đề không hợp lệ 
+        [TestCase("Kiểm tra chức năng liên hệ nhập tiêu đề có kí tự đặt biệt", "TC019",
+                "Dương Toàn Trung", "0928862227", "toantrung123@gmail.com", "tư vấn @", "cần tư vấn điện thoại")]
+
+        [TestCase("Kiểm tra chức năng liên hệ nhập tiêu đề là số", "TC020",
+                "Dương Toàn Trung", "0928862227", "toantrung123@gmail.com", "123", "cần tư vấn điện thoại")]
+
+        [TestCase("Kiểm tra chức năng liên hệ nhập tiêu đề là chữ và kí tự đặt biệt ", "TC021",
+                "Dương Toàn Trung", "0928862227", "toantrung123@gmail.com", "tư vấn @", "cần tư vấn điện thoại")]
         public void lienHe(string summary, string id_testcase,
                             string name, string sdt, string gmail, string title, string sub)
         {

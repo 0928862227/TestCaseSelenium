@@ -2285,19 +2285,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\SenetUser\\.nuget\\packages\\": {}
+    "C:\\Users\\user\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\SenetUser\\Desktop\\DuongToanTrung_TestLienHe\\DuongToanTrung_TestLienHe.csproj",
+      "projectUniqueName": "F:\\Đại Học\\ky5(dau2024)\\ĐBCLPM\\TestCaseSelenium\\DuongToanTrung_TestLienHe\\DuongToanTrung_TestLienHe.csproj",
       "projectName": "DuongToanTrung_TestLienHe",
-      "projectPath": "C:\\Users\\SenetUser\\Desktop\\DuongToanTrung_TestLienHe\\DuongToanTrung_TestLienHe.csproj",
-      "packagesPath": "C:\\Users\\SenetUser\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\SenetUser\\Desktop\\DuongToanTrung_TestLienHe\\obj\\",
+      "projectPath": "F:\\Đại Học\\ky5(dau2024)\\ĐBCLPM\\TestCaseSelenium\\DuongToanTrung_TestLienHe\\DuongToanTrung_TestLienHe.csproj",
+      "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
+      "outputPath": "F:\\Đại Học\\ky5(dau2024)\\ĐBCLPM\\TestCaseSelenium\\DuongToanTrung_TestLienHe\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\SenetUser\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\user\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -2317,11 +2317,6 @@
         "warnAsError": [
           "NU1605"
         ]
-      },
-      "restoreAuditProperties": {
-        "enableAudit": "true",
-        "auditLevel": "low",
-        "auditMode": "direct"
       }
     },
     "frameworks": {
@@ -2385,7 +2380,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.202/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100/PortableRuntimeIdentifierGraph.json"
       }
     }
   }
